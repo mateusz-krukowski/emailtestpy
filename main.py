@@ -3,7 +3,7 @@ from smtplib import SMTP
 from email.message import EmailMessage
 from getpass import getpass
 
-fromaddr = ("sender's adress: ")
+fromaddr = input("sender's adress: ")
 toaddrs = input("receiver's adress: ")
 msg = EmailMessage()
 msg['From'] = fromaddr
